@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>luyen thuyen</title>
+</head>
+<body>
+ <form>
+     <img id="myImage" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUm5bTv0Yvb_Dc428_YGm70vJ6eHoD93TJXA&s" alt="Hình ảnh google" style ="width: 30%" />
+<p>Click button below to move the image to right</p>
+     <input type="button" value ="Click Me" />
+ </form>
+<script>
+    let img0bj =null;
+    img0bj = document.getElementById('myImage');
+    function init() {
+
+        img0bj = document.getElementById('myImage');
+        img0bj.style.position = 'relative'
+        img0bj.style.left = '0px';
+    }
+    function moveRight() {
+        img0bj.style.left = parseInt(img0bj.style.left) + 10 + 'px';
+    }
+    window.onloat = init;
+
+</script>
+</body>
+</html>
