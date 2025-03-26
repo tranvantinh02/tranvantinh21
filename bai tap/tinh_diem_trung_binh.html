@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung bình và toán tử</title>
+</head>
+<body>
+<script>
+  let vatLy = parseFloat(prompt("Nhập điểm môn vật lý:"));
+  let hoaHoc = parseFloat(prompt("Nhập điểm môn Hóa Học"));
+  let sinhHoc = parseFloat(prompt("Nhập điểm môn Sinh Học"));
+
+  //Tính tổng điểm 3 môn
+  let tinhTong = vatLy + hoaHoc + sinhHoc;
+  //Tính điểm trung bình
+ let trungBinh = tinhTong/3;
+
+ //Hiển thị kết quả
+  console.log("tinhTong" + tinhTong);
+  console.log("trungBinh" + trungBinh);
+</script>
+
+</body>
+</html>

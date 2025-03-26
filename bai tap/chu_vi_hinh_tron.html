@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chu vi Hình Tròn</title>
+</head>
+<body>
+<script>
+    //Nhập bán kính từ người dung
+     let banKinh = parseFloat(prompt("Nhập bán knh Hình Tròn"));
+
+     //Kiểm tra nếu người dùng nhập sai
+    if (isNaN(banKinh) || banKinh <= 0 ) {
+        alert("Nhập một số hợp lệ! ");
+    }else {
+        //Tính chu vi
+        let chuVi = 2 * Math.PI * banKinh;
+        //Hiển thị kết quả
+        console.log(`chu vi hình tròn: ${chuVi.toFixed(2)}đơn vị chu vi`);
+        alert(`chu vi hình tròn là: ${chuVi.toFixed(2)}`);
+
+    }
+
+</script>
+
+</body>
+</html>
