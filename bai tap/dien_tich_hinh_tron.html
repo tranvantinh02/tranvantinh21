@@ -6,20 +6,23 @@
 </head>
 <body>
 <script>
-//Nhập bán kính người dùng
-let banKinh = parseFloat(prompt("Nhập bán kính Hình Tròn:"));
+   //Nhập bán kính người dùng
+   let banKinh = parseFloat(prompt("Nhập bán kình Hình Tròn:"));
 
-//Kiểm tra nếu người dùng nhập sai (không phải số hoặc số âm)
-if (isNaN(banKinh) || banKinh <= 0 ) {
-    alert("Nhập một số hợp lệ(lớn hơn 0)! ");
+   //Kiểm tra người dùng nhập sai (không phải số hoặc số âm)
+   if (isNaN(banKinh) || banKinh <= 0 ) {
+       alert("Nhập một số hợp lệ (lớn hơn 0 )! ");
+   }else {
+       //Tính diện tích
+       let dienTich = Math.PI * Math.pow(banKinh, 2);
 
-    //Tính diện tích
-    let dienTich = Math.PI * Math.pow(banKinh, 2);
+       //Hiển thị kết quả
+       console.log(`diện tích Hình Tròn: ${dienTich.toFixed(2)}đơn vị diện tích`);
+       alert(`diện tích hình tròn là:${dienTich.toFixed(2)}`);
 
-    //Hiển thị kết quả
-    console.log(`diện tích hình tròn: ${dienTich.toFixed(2)}đơn vị diện tích`);
-    alert(`diện tích hình tròn là: ${dienTich.toFixed(2)}`);
-}
+
+
+    }
 </script>
 </body>
 </html>

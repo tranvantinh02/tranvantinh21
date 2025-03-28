@@ -6,19 +6,18 @@
 </head>
 <body>
 <script>
-    //Nhập bán kính từ người dung
-     let banKinh = parseFloat(prompt("Nhập bán knh Hình Tròn"));
+    //Nhập bán kính từ người dùng
+    let banKinh = parseFloat(prompt("Nhập bán kính Hình Tròn:"));
 
-     //Kiểm tra nếu người dùng nhập sai
-    if (isNaN(banKinh) || banKinh <= 0 ) {
-        alert("Nhập một số hợp lệ! ");
+    //Kiểm tra nếu người dùng nhập sai
+    if (isNaN(banKinh) || banKinh <= 0) {
+    alert("Nhập một số hợp lệ lớn hơn 0! ");
     }else {
-        //Tính chu vi
-        let chuVi = 2 * Math.PI * banKinh;
+        //tính chu vi hình tròn
+        let chuVi = 2 * Math.PI * banKinh ;
         //Hiển thị kết quả
-        console.log(`chu vi hình tròn: ${chuVi.toFixed(2)}đơn vị chu vi`);
-        alert(`chu vi hình tròn là: ${chuVi.toFixed(2)}`);
-
+        console.log(`bán kính hình tròn: ${chuVi.toFixed(2)}đơn vị bán kính `);
+        alert(`bán kính hình tròn là: ${chuVi.toFixed(2)}`);
     }
 
 </script>
